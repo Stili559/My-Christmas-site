@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Cover Template · Bootstrap v5.0</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+   
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+  
+        .topleft {
+          position: absolute;
+          top: 4px;
+          left: 8px;
+          font-size: 10px;
+        }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      body {
+        background-image: url(img/dedd.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+      }
+     p {
+        text-align: center;
+        font-size: 80px;
+        margin-top: 0px;
+        color: rgb(71, 0, 0);
+        text-shadow: none;    
+       }
+       h1 
+       {
+         font-size: 80px;
+         color: rgb(71, 0, 0);
+         text-shadow: none;      
+       }
+   
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover d-flex w-100 h-100  mx-auto flex-column">
+  <header class="mb-auto">
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            <strong style="color: rgb(255, 255, 255);">Merry Christmas</strong>
+          </a>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <h4><a class="nav-link active" style="text-indent: 15px; color: rgb(255, 255, 255);" aria-current="page"  href="#">Home</a></h4>
+            <h4><a class="nav-link" style="text-indent: 15px; color: rgb(255, 255, 255);" href= D:\Users\User\Downloads\Screenshot_2021-12-16_130000\LuckyCards.html>Lucky Cards</a></h4>
+            <h4><a class="nav-link" style="text-indent: 15px; color: rgb(255, 255, 255);" href= D:\Users\User\Downloads\Screenshot_2021-12-16_130000\christmas.html>Christmas</a></h4>
+            <h4><a class="nav-link" style="text-indent: 15px; color: rgb(255, 255, 255);" href= D:\Users\User\Downloads\Screenshot_2021-12-16_130000\Christmassweet.html>Christmas sweet</a></h4>
+          </nav>
+          </button>
+        </div>
+      </div>
+    </header>
+
+  <main class="px-24">
+    <h1 style="font-family:Georgia, serif">There are only</h1>
+    <p id="demo" style="font-family:Georgia, serif"></p>
+    <h1 style="font-family:Georgia, serif">until Christmas!</h1>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 25, 2022 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + " days " + hours + " hours " + minutes + " mins " + seconds + " secs " ;
+
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Merry Christmas";
+  }
+});
+console.log("until Christmas!")
+</script>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+  </footer>
+</div>
+    
+  </body>
+</html>
